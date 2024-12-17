@@ -9,8 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// MongoDB connection URI
-const uri = "mongodb+srv://kamran121:123crud%23%23AA@cluster1.1u5dx.mongodb.net/<dbname>?retryWrites=true&w=majority&appName=Cluster1";
+const uri = "mongodb+srv://kamran121:123crud##AA@cluster1.1u5dx.mongodb.net/crud";
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("MongoDB Atlas connected successfully!"))
